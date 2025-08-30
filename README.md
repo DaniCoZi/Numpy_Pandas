@@ -113,6 +113,27 @@ mat = np.array
 print("\nmat + u (broadcasting):\n", mat + u)
 
 
+## D) Pandas – Operaciones avanzadas en DataFrames
+# 1. Filtros
 
+Sirven para seleccionar filas según una condición.
+Ejemplo:
+```python
+import pandas as pd
+
+df = pd.DataFrame({
+    "Nombre": ["Ana", "Luis", "Carlos", "María"],
+    "Edad": [23, 34, 29, 40],
+    "Ciudad": ["Bogotá", "Medellín", "Cali", "Bogotá"]
+})
+
+# Filtrar personas mayores de 30
+filtro = df[df["Edad"] > 30]
+print(filtro)
+
+# Filtrar por ciudad
+print(df[df["Ciudad"] == "Bogotá"])
+
+```
 
 
