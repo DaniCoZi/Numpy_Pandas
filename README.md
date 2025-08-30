@@ -155,4 +155,38 @@ mat = np.array
 print("\nmat + u (broadcasting):\n", mat + u)
 
 
+# C) Pandas – Creación y manipulación de DataFrames y Series
 
+C-pandas-dataframes
+## 1. Creación de Series
+Un `Series` es una columna unidimensional (como un vector con etiquetas).
+```python
+
+import pandas as pd
+
+# Crear un Series a partir de una lista
+serie = pd.Series([10, 20, 30, 40], name="Edades")
+
+print("Series:")
+display(serie)
+
+```
+
+
+## 2. Creación de DataFrames
+Un DataFrame es la estructura principal de Pandas.
+Piensa en él como una tabla de datos con filas y columnas (similar a una hoja de cálculo o una tabla SQL).
+Está compuesto por varias Series organizadas en columnas.
+```python
+# Crear un DataFrame a partir de un diccionario
+data = {
+    "Nombre": ["Ana", "Luis", "Carlos", "María"],
+    "Edad": [23, 30, 27, 22],
+    "Ciudad": ["Bogotá", "Medellín", "Cali", "Barranquilla"]
+}
+
+df = pd.DataFrame(data)
+
+print("DataFrame:")
+display(df)
+=======
