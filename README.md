@@ -190,3 +190,15 @@ df = pd.DataFrame(data)
 print("DataFrame:")
 display(df)
 =======
+```
+
+## 4. Selección de columnas
+```python
+# Seleccionar una sola columna
+print("Columna Edad:")
+display(df["Edad"])
+
+# Seleccionar múltiples columnas
+print("Columnas Nombre y Ciudad:")
+display(df[["Nombre", "Ciudad"]])
+```
